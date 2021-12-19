@@ -17,8 +17,10 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.1'
     testImplementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    testImplementation 'org.seleniumhq.selenium:selenium-chrome-driver:3.141.59'
 }
 
 test {
     useJUnitPlatform()
+    systemProperty 'selenium.headless', System.getProperty('selenium.headless')
 }

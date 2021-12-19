@@ -1,16 +1,16 @@
-image: Ubuntu  # образ для сборки
+image: Ubuntu
 
-stack: jdk 11  # версия JDK
+stack: jdk 11
 
 branches:
   only:
-    - master  # ветка git
+    - master
 
-build: off  # будем использовать свой скрипт сборки
+build: off
 
 install:
   - chmod +x gradlew
-  - java -jar ./artifacts/app-card-delivery.jar &
+  - java -jar ./artifacts/app-order.jar &
 
 build_script:
-  - ./gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
+  - ./gradlew -Dselenide.headless=true test --info
