@@ -10,7 +10,7 @@ build: off  # будем использовать свой скрипт сбор
 
 install:
   - chmod +x gradlew
-  - java -jar ./artifacts/app-card-delivery.jar &
+  - java -jar ./artifacts/app-card-order.jar &
 
 build_script:
   - ./gradlew -Dselenide.headless=true test --info # запускаем тест, флаг --info позволяет выводить больше информации
