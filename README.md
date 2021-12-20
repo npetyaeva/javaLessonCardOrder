@@ -1,4 +1,4 @@
-# AppVeyor CI [![Build status](https://ci.appveyor.com/api/projects/status/lihq8dan1s7esgcd?svg=true)](https://ci.appveyor.com/project/npetyaeva/javalessoncardorder)
+[![Build status](https://ci.appveyor.com/api/projects/status/lihq8dan1s7esgcd?svg=true)](https://ci.appveyor.com/project/npetyaeva/javalessoncardorder)
 
 ### Модуль «Автоматизированное тестирование»
 
